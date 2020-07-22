@@ -1,0 +1,12 @@
+# Newsboat configuration file
+# General configuration
+auto-reload yes
+download-path ~/Downloads/Podcasts
+
+#color background            color254 color233 
+#color listnormal            color254 color233
+#color listfocus             color220 color242
+#color listnormal_unread     color124 color234
+#color listfocus_unread      color124 color234
+#color info                  color124 color234
+#color article               color254 color128

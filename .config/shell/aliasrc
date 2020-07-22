@@ -1,0 +1,36 @@
+#!/bin/env sh
+# File that holds aliases
+
+# Default aliases
+alias \
+    cp="cp -iv" \
+    mv="mv -iv" \
+    rm="rm -v" \
+    ls="ls -h --color=auto --group-directories-first" \
+    la="ls -a --color=auto --group-directories-first" \
+    ll="ls -lh --color=auto --group-directorues-first" \
+    grep="grep --color=auto" \
+    diff="diff --color=auto" \
+    ccat="highlight --out-format=ansi"
+
+# Workspace aliases
+alias \
+    dotfiles="git --git-dir=$HOME/.local/src/dotfiles \
+    --work-tree=$HOME" \
+    startxmonad="startx /usr/bin/xmonad" \
+    emacs="emacs -nw" \
+    perl="rlwrap perl" \
+    sbcl="rlwrap -- sbcl --userinit $XDG_CONFIG_HOME/sbcl/sbclrc" \
+
+# Utilities aliases
+alias \
+    e="nvim" \
+    g="git" \
+    s="bat" \
+    dk="docker" \
+    vm="vagrant"
+
+# XDG specification helpers
+alias \
+	tmux="tmux -f $XDG_CONFIG_HOME/tmux/tmux.conf" \
+    irssi="irssi --config=$XDG_CONFIG_HOME/irssi/config --home=$XDG_DATA_HOME/irssi"

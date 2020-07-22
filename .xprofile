@@ -1,0 +1,10 @@
+#!/usr/bin/env sh
+
+# .xprofile user file
+. "$HOME"/.profile
+
+# Starts to window manager bars
+export $(dbus-launch)
+
+# Define window manager
+export WM=xmonad

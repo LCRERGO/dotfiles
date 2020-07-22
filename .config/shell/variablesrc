@@ -1,0 +1,60 @@
+#!/usr/env sh
+
+# User variables
+export TERMINAL=alacritty
+export EDITOR=nvim
+export BROWSER=firefox
+export FILE_BROWSER=ranger
+export MUSIC_PLAYER=ncmpcpp
+export CALENDAR=calcurse
+export CALCULATOR=ghci
+export IRC_CLIENT="irssi --config=$XDG_CONFIG_HOME/irssi/config --home=$XDG_DATA_HOME/irssi"
+export SCRIPTS="$HOME"/.local/share/scripts
+export HISTCONTROL=ignoreboth
+
+
+# XDG variables
+export XDG_CONFIG_HOME="$HOME"/.config
+export XDG_CACHE_HOME="$HOME"/.cache
+export XDG_DATA_HOME="$HOME"/.local/share
+
+# General Configuration
+# FZF Options
+export FZF_DEFAULT_OPTS="--reverse"
+# Fixing Java
+export _JAVA_AWT_WM_NONREPARENTING=1
+# colored GCC warnings and errors
+export GCC_COLORS='error=01;31:warning=01;35:note=01;36:caret=01;32:locus=01:quote=01'
+# To work with tmux
+export TERM='st-256color'
+# Libvirt connection setup
+export LIBVIRT_DEFAULT_URI='qemu:///system'
+# Vagrant default provider
+export VAGRANT_DEFAULT_PROVIDER='libvirt'
+# Adding cargo binaries to the PATH
+export PATH="$PATH:$XDG_DATA_HOME/cargo/bin"
+
+# Cleanup variables
+# Password Store Directory
+export PASSWORD_STORE_DIR="$XDG_DATA_HOME"/pass
+# Node configuration file
+export NPM_CONFIG_USERCONFIG=$XDG_CONFIG_HOME/npm/npmrc
+# Less cleanup
+export LESSKEY="$XDG_CONFIG_HOME"/less/lesskey
+export LESSHISTFILE="$XDG_CACHE_HOME"/less/history
+# Readline Wrapper history
+export RLWRAP_HOME="$XDG_DATA_HOME"/rlwrap
+# Stack directory
+export STACK_ROOT="$XDG_DATA_HOME"/stack
+# Rust directory
+export RUSTUP_HOME="$XDG_DATA_HOME"/rustup
+export CARGO_HOME="$XDG_DATA_HOME"/cargo
+# Go directory
+export GOPATH="$XDG_DATA_HOME"/go
+# Vagrant directories
+export VAGRANT_HOME="$XDG_DATA_HOME"/vagrant
+export VAGRANT_ALIAS_FILE="$XDG_DATA_HOME"/vagrant/aliases
+# Docker directory
+export DOCKER_CONFIG="$XDG_CONFIG_HOME"/docker
+# GTK directories
+export GTK2_RC_FILES="$XDG_CONFIG_HOME"/gtk-2.0/gtkrc
