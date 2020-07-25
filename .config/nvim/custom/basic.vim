@@ -1,3 +1,16 @@
+function! s:SetColorScheme()
+    " Dynamicaly sets colorscheme
+    let myterm = $TERM
+
+    if has('gui_running')
+        colorscheme dracula
+    elseif l:myterm=~'linux'
+        colorscheme murphy
+    else
+        colorscheme dracula
+    endif
+endfunction
+
 " Basic configuration
 syntax on                   " Enables file syntax
 filetype plugin indent on   " Enables plugin helpers
@@ -24,7 +37,7 @@ set splitbelow splitright   " Changes split orientation
 set title                   " Shows currently file title
 set mouse=a                 " Enables mouse
 set termguicolors           " Enables colors
-colorscheme dracula         " Changes colorscheme
+call <SID>SetColorScheme()  " Changes colorscheme
 
 " Mappings
 nnoremap <leader>N :setlocal nonumber! norelativenumber!<cr>
