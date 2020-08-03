@@ -25,6 +25,7 @@ set monospace-font-size=12
 # Shortcut templates
 shortcut-add d=https://duckduckgo.com/?q=$0
 shortcut-add g=https://encrypted.google.com/search?q=$0
+shortcut-add git=https://github.com/search?q=$0
 shortcut-add yt=https://youtube.com/results?search_query=$0
 shortcut-add hk=https://hoogle.haskell.org/?hoogle=$0
 shortcut-add py=https://docs.python.org/3.7/search.html?q=$0

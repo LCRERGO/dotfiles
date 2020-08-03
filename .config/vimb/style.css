@@ -3,6 +3,10 @@
   color: #f8f8f2 !important;
 }
 
+div,pre,textarea,body,input,td,tr,p {
+  background-image: none !important;
+}
+
 h1,h2,h3,h4,h5,h6 {
   background-color: #282a36 !important;
   color: #8be9fd !important;
