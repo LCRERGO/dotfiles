@@ -28,7 +28,8 @@ alias \
     g="git" \
     s="bat" \
     dk="docker" \
-    vm="vagrant"
+    vm="vagrant" \
+    vimb="tabbed -c -- vimb -e"
 
 # XDG specification helpers
 alias \
