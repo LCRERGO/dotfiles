@@ -35,3 +35,7 @@ shortcut-default d
 nnoremap + zI
 nnoremap - zO
 nnoremap = zz
+
+# Remaps history commands
+nnoremap <C-i> <C-o>
+nnoremap <C-o> <C-i>
