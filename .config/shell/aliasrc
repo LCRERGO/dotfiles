@@ -6,6 +6,7 @@ alias \
     cp="cp -iv" \
     mv="mv -iv" \
     rm="rm -v" \
+    ln="ln -v" \
     ls="ls -h --color=auto --group-directories-first" \
     la="ls -a --color=auto --group-directories-first" \
     ll="ls -lh --color=auto --group-directorues-first" \
