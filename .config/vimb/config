@@ -37,6 +37,10 @@ nnoremap + zI
 nnoremap - zO
 nnoremap = zz
 
+# Remaps for tabbed
+nnoremap gt :sh! xdotool key --window $VIMB_XID ctrl+shift+l<CR><ESC>
+nnoremap gT :sh! xdotool key --window $VIMB_XID ctrl+shift+h<CR><ESC>
+
 # Remaps history commands
 nnoremap <C-i> <C-o>
 nnoremap <C-o> <C-i>
