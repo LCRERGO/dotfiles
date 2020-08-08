@@ -10,3 +10,5 @@ It does have extra modules to my liking.
 - For weather module:
     - jq
     - curl
+- For packages module:
+    - aptitude
