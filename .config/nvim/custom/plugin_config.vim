@@ -9,7 +9,7 @@ let g:NERDTreeDirArrowExpandable = '▸'
 let g:NERDTreeDirArrowCollapsible = '▾'
 
 " FZF configuration
-map <C-p> :FZF<CR>
+map <leader>f :FZF<CR>
 
 " For airline support
 let g:airline_theme='dracula'

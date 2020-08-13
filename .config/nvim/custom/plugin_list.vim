@@ -30,11 +30,11 @@ Plug 'tpope/vim-fugitive'
 " C/C++ additional sytax
 Plug 'octol/vim-cpp-enhanced-highlight', {'for': ['C', 'C++']}
 
+" Guile Helper
+Plug 'HiPhish/guile.vim'
+
 " Haskell Helper
 Plug 'neovimhaskell/haskell-vim', {'for': 'haskell'}
-
-" Common Lisp Helper
-Plug 'vlime/vlime', {'for': 'lisp'}
 
 " Kotlin Helper
 Plug 'udalov/kotlin-vim', {'for': 'kotlin'}
