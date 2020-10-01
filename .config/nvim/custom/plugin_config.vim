@@ -23,6 +23,14 @@ let g:airline#extensions#left_alt_sep='|'
 let g:ale_list_window_size=5
 nmap <silent> <C-k> <Plug>(ale_previous_wrap)
 nmap <silent> <C-j> <Plug>(ale_next_wrap)
+augroup ale_haskell
+    autocmd!
+    autocmd Filetype haskell let g:ale_linters = { 'haskell':['hlint', 'ghc'] }
+augroup END
+augroup ale_cpp
+    autocmd!
+    autocmd Filetype cpp let g:ale_linters = { 'cpp': ['g++', 'clang++'] }
+augroup END
 
 " Hexokinase configuration
 let g:Hexokinase_highlighters = ['backgroundfull']
