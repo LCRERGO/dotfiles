@@ -1,22 +1,30 @@
 #!/usr/bin/env bash
 
+function get_location {
+    local remote_ip
+    remote_ip="$(dig +short \
+        myip.opendns.com @resolver1.opendns.com)"
+    latitude="$(geoiplookup "${remote_ip}" \
+        | awk 'BEGIN{FS=", "} NR==2{print $7}')"
+    longitude="$(geoiplookup "${remote_ip}" \
+        | awk 'BEGIN{FS=", "} NR==2{print $8}')"
+}
+
 function main {
     local api_key
     local weather
     local temp
     local response
     local icon
-    local city_name
 
     while ! ping -q -c1 8.8.8.8; do
         :
     done &> /dev/null
 
-    city_name="São Carlos"
-    city_name="${city_name/ /+}"
+    get_location
     api_key=""
     response=$(curl -sL \
-        "api.openweathermap.org/data/2.5/weather?q=${city_name}&appid=${api_key}&units=metric")
+        "api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=${api_key}&units=metric")
 
     weather=$(echo "${response}" | jq '.weather[0].icon')
     temp=$(echo "${response}" | jq '.main.temp')
