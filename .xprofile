@@ -3,6 +3,9 @@
 # .xprofile user file
 . "$HOME"/.profile
 
+# Xresources
+xrdb -merge "${HOME}"/.Xresources
+
 # Starts to window manager bars
 export $(dbus-launch)
 
