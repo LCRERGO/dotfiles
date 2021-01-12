@@ -22,3 +22,4 @@ This requires the following applications to run in a clean way:
 - vimb(Web Browser)
 - wyebadblock(Ad Block) with easylist
 - tabbed(Tab support)
+- xwallpaper(Wallpaper setter support)
