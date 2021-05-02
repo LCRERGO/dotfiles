@@ -12,6 +12,7 @@ alias \
     ll="ls -lh --color=auto --group-directorues-first" \
     grep="grep --color=auto" \
     diff="diff --color=auto" \
+    ip="ip --color" \
     ccat="highlight --out-format=ansi"
 
 # Workspace aliases
