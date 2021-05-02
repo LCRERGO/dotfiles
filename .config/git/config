@@ -3,3 +3,5 @@
 [user]
 	name = Lucas Cruz dos Reis
 	email = lcr.ergo@gmail.com
+[init]
+	defaultBranch = main
