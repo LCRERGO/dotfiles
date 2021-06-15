@@ -7,7 +7,7 @@ configuration, if needed they can be checked in other repositories.
 ## Applications
 ---------------
 This requires the following applications to run in a clean way:
-- alacritty(Terminal Emulator)
+- st(Terminal Emulator)
 - ghc(Haskell Suite)
 - dunst(Notification Deamon)
 - git(Version Control)
