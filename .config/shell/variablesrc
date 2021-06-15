@@ -1,7 +1,7 @@
 #!/usr/env sh
 
 # User variables
-export TERMINAL="alacritty"
+export TERMINAL="st"
 export EDITOR="nvim"
 export BROWSER="brave-browser"
 export FILE_BROWSER="ranger"
