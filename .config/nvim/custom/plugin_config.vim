@@ -1,8 +1,5 @@
 " Plugin configuration
 
-" YouCompleteMe configuration
-let g:ycm_global_ycm_extra_conf = '~/.config/ycm_extra_conf.py'
-
 " Nerdtree configuration
 map <C-n> :NERDTreeToggle<CR>
 let g:NERDTreeDirArrowExpandable = '▸'

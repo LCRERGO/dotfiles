@@ -5,13 +5,12 @@ Plug 'scrooloose/nerdtree', {'on': 'NERDTreeToggle'}
 " Async syntax checking
 Plug 'dense-analysis/ale'
 
+" Completition engine
+" REQUIRES: node
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
+
 " Fuzzy Finder
 Plug 'junegunn/fzf'
-
-" Vim must be compiled with python flags and the install command for the
-" plugin must be run
-" Autocompletion plugin
-Plug 'ycm-core/YouCompleteMe', {'do': 'python3 install.py --clang-completer --ts-completer --java-completer --ts-completer --rust-completer'}
 
 " Indentation marcations
 Plug 'Yggdroot/indentLine'
