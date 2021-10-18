@@ -62,6 +62,14 @@ servers = (
     address = "irc.undernet.org";
     chatnet = "Undernet";
     port = "6667";
+  },
+  {
+    address = "irc.chat.twitch.tv";
+    chatnet = "Twitch";
+    port = "6667";
+    password = "oauth:<oauth_key>";
+    use_ssl = "no";
+    ssl_verify = "no";
   }
 );
 
@@ -134,6 +142,7 @@ chatnets = {
     max_msgs = "1";
     max_whois = "1";
   };
+  Twitch = { type = "IRC"; };
 };
 
 channels = (
@@ -309,3 +318,4 @@ settings = {
   part_message = "You will carry that weight...";
   "fe-text" = { actlist_sort = "refnum"; };
 };
+hilights = ( { text = "lcrergo+"; nick = "yes"; word = "yes"; color = "#33ff00"} );
