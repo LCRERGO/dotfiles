@@ -38,8 +38,12 @@ export LIBVIRT_DEFAULT_URI="qemu:///system"
 export VAGRANT_DEFAULT_PROVIDER="libvirt"
 # Adding cargo binaries to the PATH
 export PATH="${PATH}:${XDG_DATA_HOME}/cargo/bin"
+# Adding go binaries to the PATH
+export PATH="${PATH}:${XDG_DATA_HOME}/go/bin"
 # Emacs org directory
 export ORG="${XDG_DATA_HOME}/org"
+# GDB history file
+export GDBHISTFILE="${XDG_DATA_HOME}/gdb/history"
 
 # Cleanup variables
 # Password Store Directory
@@ -65,6 +69,12 @@ export VAGRANT_ALIAS_FILE="${XDG_DATA_HOME}/vagrant/aliases"
 export DOCKER_CONFIG="${XDG_CONFIG_HOME}/docker"
 # GTK directories
 export GTK2_RC_FILES="${XDG_CONFIG_HOME}/gtk-2.0/gtkrc"
+# Jupyter directories
+export IPYTHONDIR="${XDG_CONFIG_HOME}/jupyter"
+export JUPYTER_CONFIG_DIR="${XDG_CONFIG_HOME}/jupyter"
+# Ruby Gem directories
+export GEM_HOME="$XDG_DATA_HOME"/gem
+export GEM_SPEC_CACHE="$XDG_CACHE_HOME"/gem
 # AWS files
 export AWS_SHARED_CREDENTIALS_FILE="${XDG_CONFIG_HOME}/aws/credentials"
 export AWS_CONFIG_FILE="${XDG_CONFIG_HOME}/aws/config"
