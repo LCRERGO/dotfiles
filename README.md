@@ -19,3 +19,8 @@ This requires the following applications to run in a clean way:
 - wyebadblock(Ad Block) with easylist
 - tabbed(Tab support)
 - xwallpaper(Wallpaper setter support)
+
+###### Vim Dependencies
+- VimPlug(Plugin Management)
+- Golang
+- Node
