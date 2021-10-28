@@ -26,3 +26,8 @@ This requires the following applications to run in a clean way:
 - tabbed (Tab support)
 - xwallpaper (Wallpaper setter support)
 - zsh (Command Line Shell)
+
+###### Vim Dependencies
+- VimPlug (Plugin Management)
+- Golang (Plugin hexokinase)
+- Node
