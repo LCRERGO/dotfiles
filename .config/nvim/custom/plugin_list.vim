@@ -29,6 +29,9 @@ Plug 'tpope/vim-fugitive'
 " C/C++ additional sytax
 Plug 'octol/vim-cpp-enhanced-highlight', {'for': ['C', 'C++']}
 
+" Go Helper
+Plug 'fatih/vim-go', {'for': 'go'}
+
 " Guile Helper
 Plug 'HiPhish/guile.vim'
 
