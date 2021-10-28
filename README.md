@@ -12,13 +12,6 @@ This requires the following applications to run in a clean way:
 - XFCE4(Desktop Enviroment)
 - git(Version Control)
 - nvim(Editor)
-- radare2(RE suite)
-- tmux(Terminal Multiplexer)
-- zathura(PDF Reader)
-- vimb(Web Browser)
-- wyebadblock(Ad Block) with easylist
-- tabbed(Tab support)
-- xwallpaper(Wallpaper setter support)
 
 ###### Vim Dependencies
 - VimPlug(Plugin Management)
