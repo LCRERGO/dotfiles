@@ -12,6 +12,7 @@ This requires the following applications to run in a clean way:
 - XFCE4(Desktop Enviroment)
 - git(Version Control)
 - nvim(Editor)
+- bash(Shell)
 
 ###### Vim Dependencies
 - VimPlug(Plugin Management)
