@@ -31,3 +31,4 @@ This requires the following applications to run in a clean way:
 - VimPlug (Plugin Management)
 - Golang (Plugin hexokinase)
 - Node
+- [NerdFonts](https://github.com/ryanoasis/nerd-fonts)
