@@ -27,6 +27,9 @@ This requires the following applications to run in a clean way:
 - xwallpaper (Wallpaper setter support)
 - zsh (Command Line Shell)
 
+###### Zsh Dependencies
+- [Spaceship Prompt](https://github.com/spaceship-prompt/spaceship-prompt)
+
 ###### Vim Dependencies
 - VimPlug (Plugin Management)
 - Golang (Plugin hexokinase)
