@@ -29,7 +29,7 @@ alias \
     e="emacs" \
     ec="emacsclient" \
     g="git" \
-    s="bat" \
+    s="batcat" \
     dk="docker" \
     vm="vagrant" \
 
