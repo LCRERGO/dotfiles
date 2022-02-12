@@ -1,7 +1,9 @@
 # Newsboat urls
-https://www.debian.org/News/news "Debian"
-https://www.debian.org/security/dsa "Debian"
-http://kernel.org/kdist/rss.xml "Kernel"
+https://www.debian.org/News/news "Debian, Tech"
+https://www.debian.org/security/dsa "Debian, Tech"
+http://kernel.org/kdist/rss.xml "Kernel, Tech"
+
+https://www.phoronix.com/rss.php "Tech"
 
 https://jovemnerd.com.br/feed-nerdcast/ "Podcasts, Pop, News"
 https://www.retrocomputaria.com.br/feed/podcast "Podcasts, Pop, News, Tech"
