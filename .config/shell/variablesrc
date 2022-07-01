@@ -1,7 +1,7 @@
 #!/usr/env sh
 
 # User variables
-export TERMINAL="st"
+export TERMINAL="st-256color"
 export EDITOR="nvim"
 export BROWSER="brave-browser"
 export FILE_BROWSER="ranger"
