@@ -35,3 +35,7 @@ This requires the following applications to run in a clean way:
 - Golang (Plugin hexokinase)
 - Node
 - [NerdFonts](https://github.com/ryanoasis/nerd-fonts)
+
+## Caveats
+To use colored emojis on st (which is required when used with spaceship prompt
+with rust) the symbola font **must** be installed on the system. 
