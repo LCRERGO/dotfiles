@@ -18,6 +18,7 @@ This requires the following applications to run in a clean way:
 - ncmpcpp (Music Client)
 - newsboat (RSS feed client)
 - nvim (Editor)
+- emacs (Editor)
 - radare2 (RE suite)
 - tmux (Terminal Multiplexer)
 - zathura (PDF Reader)
