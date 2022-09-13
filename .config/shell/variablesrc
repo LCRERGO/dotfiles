@@ -51,8 +51,9 @@ export GDBHISTFILE="${XDG_DATA_HOME}/gdb/history"
 # Cleanup variables
 # Password Store Directory
 export PASSWORD_STORE_DIR="${XDG_DATA_HOME}/pass"
-# Node configuration file
+# Node config and history files
 export NPM_CONFIG_USERCONFIG="${XDG_CONFIG_HOME}/npm/npmrc"
+export NODE_REPL_HISTORY="${XDG_DATA_HOME}/node_repl_history"
 # Less cleanup
 export LESSKEY="${XDG_CONFIG_HOME}/less/lesskey"
 export LESSHISTFILE="${XDG_CACHE_HOME}/less/history"
@@ -65,6 +66,13 @@ export RUSTUP_HOME="${XDG_DATA_HOME}/rustup"
 export CARGO_HOME="${XDG_DATA_HOME}/cargo"
 # Go directory
 export GOPATH="${XDG_DATA_HOME}/go"
+# Java directory (not fully compliant)
+export JAVA_OPTIONS="-Djava.util.prefs.user.Root=${XDG_CONFIG_HOME}/java"
+# Ruby Gem directories
+export GEM_HOME="${XDG_DATA_HOME}"/gem
+export GEM_SPEC_CACHE="${XDG_CACHE_HOME}"/gem
+# wget config file
+export WGETRC="${XDG_CONFIG_HOME}/wgetrc"
 # Vagrant directories
 export VAGRANT_HOME="${XDG_DATA_HOME}/vagrant"
 export VAGRANT_ALIAS_FILE="${XDG_DATA_HOME}/vagrant/aliases"
@@ -75,12 +83,16 @@ export GTK2_RC_FILES="${XDG_CONFIG_HOME}/gtk-2.0/gtkrc"
 # Jupyter directories
 export IPYTHONDIR="${XDG_CONFIG_HOME}/jupyter"
 export JUPYTER_CONFIG_DIR="${XDG_CONFIG_HOME}/jupyter"
-# Ruby Gem directories
-export GEM_HOME="$XDG_DATA_HOME"/gem
-export GEM_SPEC_CACHE="$XDG_CACHE_HOME"/gem
 # AWS files
 export AWS_SHARED_CREDENTIALS_FILE="${XDG_CONFIG_HOME}/aws/credentials"
 export AWS_CONFIG_FILE="${XDG_CONFIG_HOME}/aws/config"
+# WINE prefix
+export WINEPREFIX="${XDG_DATA_HOME}/wineprefixes/default"
+# Android Studio directory
+export ANDROID_HOME="${XDG_DATA_HOME}/android"
+# Cabal directories
+export CABAL_CONFIG="${XDG_CONFIG_HOME}/cabal/config"
+export CABAL_DIR="${XDG_DATA_HOME}/cabal"
 
 # Sourcing LF_ICONS
 . "${XDG_CONFIG_HOME}/shell/lficons"
