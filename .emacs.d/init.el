@@ -1,43 +1,60 @@
 ;; Njord Emacs configuration file
 
+;; Default disablings
+(tool-bar-mode 0)        ; Disable toolbar
+(scroll-bar-mode 0)      ; Disable visible scroll-bar
+
+
+;; Basic configuration
+(setq tab-width 4)             ; tab spacing size
+(setq scroll-conservatively 1) ; scroll method
+(column-number-mode)           ; column number indicator on modeline
+
+(set-face-attribute
+ 'default nil :font "Hack Nerd Font Mono" :height 100)
+
+;; Package configuration
 (require 'package)
-(add-to-list 'package-archives
-	     '("melpa-stable" . "https://stable.melpa.org/packages/") t)
+(setq package-archives
+      '(("melpa-stable" . "https://stable.melpa.org/packages/")
+	("elpa" . "https://elpa.gnu.org/packages/")))
 (package-initialize)
+(unless package-archive-contents
+  (package-refresh-contents))
 
-(setq package-selected-packages '(lsp-mode
-				  lsp-ui
-				  lsp-treemacs
-				  go-mode
-				  company
-				  magit
-				  pdf-tools
-				  treemacs
-				  yasnippet
-				  rainbow-delimiters
-				  dracula-theme))
-(setq custom-safe-themes
-      '("fe1c13d75398b1c8fd7fdd1241a55c286b86c3e4ce513c4292d01383de152cb7"))
-(load-theme 'dracula)
+(unless (package-installed-p 'use-package)
+  (package-install 'use-package))
 
-(add-to-list 'default-frame-alist
-	     '(font . "DejaVu Sans Mono-10"))
+(require 'use-package)
+(setq use-package-always-ensure t)
 
-(ido-mode 1)
-(add-hook 'lsp-mode-hook (lambda ()
-			   (lsp-ui-mode)
-			   (lsp-ui-doc-enable)))
-(require 'lsp-mode)
-(require 'dired-x)
-(add-hook 'after-init-hook 'global-company-mode)
+;; Better completion mode
+(use-package ivy
+  :diminish
+  :config
+  (ivy-mode 1))
+
+;; Colored Delimiters
+(use-package rainbow-delimiters
+  :hook (prog-mode . rainbow-delimiters-mode))
+
+;; Key describer
+(use-package which-key
+  :init (which-key-mode)
+  :diminish
+  :config (setq which-key-idle-delay 0.3))
+
+
+;; Mode hooks
+(defun njord/prog-mode-variables ()
+  (setq display-line-numbers 'relative)
+  (setq display-fill-column-indicator-column t)
+  (setq show-trailing-whitespace t))
+
+(defun njord/prog-mode-minor-modes ()
+  (flyspell-prog-mode)
+  (global-display-fill-column-indicator-mode))
+
 (add-hook 'prog-mode-hook (lambda ()
-			    (flyspell-prog-mode)
-			    (rainbow-delimiters-mode)
-			    (setq display-line-numbers 'relative) 
-			    (treemacs)
-			    #'lsp-deferred))
-
-(add-hook 'go-mode-hook (lambda ()
-			  (add-hook 'before-save-hook #'lsp-format-buffer t t)
-			  (add-hook 'before-save-hook #'lsp-organize-imports
-				    t t)))
+			    (njord/prog-mode-variables)
+			    (njord/prog-mode-minor-modes)))
