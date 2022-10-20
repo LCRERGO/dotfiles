@@ -9,7 +9,7 @@ xrdb -merge "${HOME}"/.Xresources
 # Autostart applications
 # Starts to window manager bars
 export $(dbus-launch)
-emacs --daemon
+#emacs --daemon
 dunst &
 
 
