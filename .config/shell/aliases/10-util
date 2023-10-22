@@ -1,0 +1,8 @@
+# Utilities aliases
+alias \
+    e="emacs" \
+    ec="emacsclient" \
+    g="git" \
+    s="batcat" \
+    dk="docker" \
+    vm="vagrant" \

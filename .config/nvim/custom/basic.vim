@@ -39,5 +39,8 @@ set mouse=a                 " Enables mouse
 set termguicolors           " Enables colors
 call <SID>SetColorScheme()  " Changes colorscheme
 
+" COC workaround
+let g:coc_disable_startup_warning = 1
+
 " Mappings
 nnoremap <leader>N :setlocal nonumber! norelativenumber!<cr>

@@ -1,0 +1,10 @@
+# Workspace aliases
+alias \
+    dotfiles="git --git-dir=$HOME/.local/src/dotfiles \
+    --work-tree=$HOME" \
+    startxmonad="startx /usr/bin/xmonad" \
+    #emacs="emacs -nw" \
+    perl="rlwrap perl" \
+    #sbcl="rlwrap -- sbcl --userinit $XDG_CONFIG_HOME/sbcl/sbclrc" \
+    neofetch="neofetch --ascii ${XDG_DATA_HOME}/ascii-art/hammer.txt"
+

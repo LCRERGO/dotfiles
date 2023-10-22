@@ -1,0 +1,26 @@
+# General Configuration
+# FZF Options
+export FZF_DEFAULT_OPTS="--reverse"
+# Fixing Java
+export _JAVA_AWT_WM_NONREPARENTING=1
+# colored GCC warnings and errors
+export GCC_COLORS="error=01;31:\
+    warning=01;35:\
+    note=01;36:\
+    caret=01;32:\
+    locus=01:\
+    quote=01"
+# Libvirt connection setup
+export LIBVIRT_DEFAULT_URI="qemu:///system"
+# Vagrant default provider
+export VAGRANT_DEFAULT_PROVIDER="libvirt"
+# Adding doom emacs binaries to PATH
+export PATH="${PATH}:${XDG_CONFIG_HOME}/emacs/bin"
+# Adding cargo binaries to the PATH
+export PATH="${PATH}:${XDG_DATA_HOME}/cargo/bin"
+# Adding go binaries to the PATH
+export PATH="${PATH}:${XDG_DATA_HOME}/go/bin"
+# Emacs org directory
+export ORG="${XDG_DATA_HOME}/org"
+# GDB history file
+export GDBHISTFILE="${XDG_DATA_HOME}/gdb/history"

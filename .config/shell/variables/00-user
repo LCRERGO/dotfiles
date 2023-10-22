@@ -1,0 +1,15 @@
+# User variables
+export TERMINAL="st-256color"
+export EDITOR="nvim"
+export BROWSER="brave-browser"
+export FILE_BROWSER="ranger"
+export MUSIC_PLAYER="ncmpcpp"
+export CALENDAR="calcurse"
+export CALCULATOR="ghci"
+export IRC_CLIENT="irssi \
+    --config=${XDG_CONFIG_HOME}/irssi/config \
+    --home=${XDG_DATA_HOME}/irssi"
+export SCRIPTS="${HOME}/.local/share/scripts"
+export SOURCE="${HOME}/.local/src"
+export HISTCONTROL="ignoreboth"
+export DEBEMAIL='lcr.ergo@gmail.com'

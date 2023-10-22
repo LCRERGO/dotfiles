@@ -1,45 +1,66 @@
 ! .Xresources file
 
 ! Nord Theme
-#define nord0 #2E3440
-#define nord1 #3B4252
-#define nord2 #434C5E
-#define nord3 #4C566A
-#define nord4 #D8DEE9
-#define nord5 #E5E9F0
-#define nord6 #ECEFF4
-#define nord7 #8FBCBB
-#define nord8 #88C0D0
-#define nord9 #81A1C1
-#define nord10 #5E81AC
-#define nord11 #BF616A
-#define nord12 #D08770
-#define nord13 #EBCB8B
-#define nord14 #A3BE8C
-#define nord15 #B48EAD
+#define nord0       #2E3440
+#define nord1       #3B4252
+#define nord2       #434C5E
+#define nord3       #4C566A
+#define nord4       #D8DEE9
+#define nord5       #E5E9F0
+#define nord6       #ECEFF4
+#define nord7       #8FBCBB
+#define nord8       #88C0D0
+#define nord9       #81A1C1
+#define nord10      #5E81AC
+#define nord11      #BF616A
+#define nord12      #D08770
+#define nord13      #EBCB8B
+#define nord14      #A3BE8C
+#define nord15      #B48EAD
 
-*.foreground:   nord0
-*.background:   nord4
-*.cursorColor:  nord0
-*fading: 35
-*fadeColor: nord3
+! Dracula Theme
+#define draculaFG   #F8F8F2
+#define draculaBG   #282A36
+#define dracula0    #000000
+#define dracula1    #FF5555
+#define dracula2    #50FA7B
+#define dracula3    #F1FA8C
+#define dracula4    #BD93F9
+#define dracula5    #FF79C6
+#define dracula6    #8BE9FD
+#define dracula7    #BFBFBF
+#define dracula8    #4D4D4D
+#define dracula9    #FF6E67
+#define dracula10   #5AF78E
+#define dracula11   #F4F99D
+#define dracula12   #CAA9FA
+#define dracula13   #FF92D0
+#define dracula14   #9AEDFE
+#define dracula15   #E6E6E6
 
-*.color0: nord1
-*.color1: nord11
-*.color2: nord14
-*.color3: nord13
-*.color4: nord9
-*.color5: nord15
-*.color6: nord8
-*.color7: nord5
-*.color8: nord3
-*.color9: nord11
-*.color10: nord14
-*.color11: nord13
-*.color12: nord9
-*.color13: nord15
-*.color14: nord7
-*.color15: nord6
 
-*.font: Hack Nerd Font:size=9:antialias=true:autohint=true
-XTerm.VT100.faceName: Hack Nerd Font:size=9:antialias=true:autohint=true
+*.foreground:   draculaFG
+*.background:   draculaBG
+*.cursorColor:  draculaFG
+*fading:        35
+! *fadeColor:     dracula3
+
+*.color0:       dracula0
+*.color1:       dracula1
+*.color2:       dracula2
+*.color3:       dracula3
+*.color4:       dracula4
+*.color5:       dracula5
+*.color6:       dracula6
+*.color7:       dracula7
+*.color8:       dracula8
+*.color9:       dracula9
+*.color10:      dracula10
+*.color11:      dracula11
+*.color12:      dracula12
+*.color13:      dracula13
+*.color14:      dracula14
+*.color15:      dracula15
+
+*.font: Fura Mono Nerd Font:size=14:antialias=true:autohint=true
+XTerm.VT100.faceName: Fura Mono Regular Nerd Font:size=9:antialias=true:autohint=true
