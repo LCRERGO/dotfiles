@@ -1,0 +1,13 @@
+# Display Manager init configuration file
+case ${DESKTOP_SESSION} in
+    "dwm" | "DWM")
+        . ${HOME}/.profile
+        set_wall
+        xrdb -merge "${HOME}"/.Xresources
+        picom -b
+        slstatus &
+        ;;
+    *)
+        . ${HOME}/.profile
+        ;;
+esac
