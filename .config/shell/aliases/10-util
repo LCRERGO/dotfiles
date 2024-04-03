@@ -4,5 +4,10 @@ alias \
     ec="emacsclient" \
     g="git" \
     s="batcat" \
-    dk="docker" \
-    vm="vagrant" \
+    dk="docker"  \
+    docker-compose="podman-compose"\
+    dkc="docker-compose"\
+    vm="virsh" \
+
+# Assumes the given alias is already created
+#docker="podman"
