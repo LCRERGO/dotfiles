@@ -11,5 +11,6 @@ export IRC_CLIENT="irssi \
     --home=${XDG_DATA_HOME}/irssi"
 export SCRIPTS="${HOME}/.local/share/scripts"
 export SOURCE="${HOME}/.local/src"
+export SRC="${SOURCE}"
 export HISTCONTROL="ignoreboth"
 export DEBEMAIL='lcr.ergo@gmail.com'
