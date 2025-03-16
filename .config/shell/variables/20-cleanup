@@ -50,3 +50,7 @@ export ANDROID_HOME="${XDG_DATA_HOME}/android"
 # Cabal directories
 export CABAL_CONFIG="${XDG_CONFIG_HOME}/cabal/config"
 export CABAL_DIR="${XDG_DATA_HOME}/cabal"
+# Tex directories
+export TEXMFHOME="${XDG_DATA_HOME}/texmf"
+export TEXMFVAR="${XDG_CACHE_HOME}/texlive/texmf-var"
+export TEXMFCONFIG="${XDG_CONFIG_HOME}/texlive/texmf-config"
